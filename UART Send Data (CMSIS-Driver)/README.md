@@ -1,0 +1,1 @@
+Test program of work with UART on CMSIS Driver for STM32F103 Blue Pill
