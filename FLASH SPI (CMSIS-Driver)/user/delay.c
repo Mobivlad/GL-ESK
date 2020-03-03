@@ -10,16 +10,11 @@ void SysTick_Handler()
 void initDelay()
 {
     SystemCoreClockUpdate();
-    SysTick_Config(SystemCoreClock / 1000000);
-}
- 
-void DelayUs(uint32_t us)
-{
-    usTicks = us;
-    while (usTicks);
+    SysTick_Config(SystemCoreClock / 1000);
 }
  
 void DelayMs(uint32_t ms)
 {
-    while (ms--)DelayUs(1000);
+    usTicks = ms;
+    while (usTicks);
 }

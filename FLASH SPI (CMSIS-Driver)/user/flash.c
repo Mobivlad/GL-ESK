@@ -2,12 +2,12 @@
 
 void disableFlash(void)
 {
-	GPIOD->ODR |= GPIO_PIN_7;
+	HAL_GPIO_WritePin(GPIOD,GPIO_PIN_7,GPIO_PIN_SET);
 }
 
 void enableFlash(void)
 {
-	GPIOD->ODR &= ~GPIO_PIN_7;
+	HAL_GPIO_WritePin(GPIOD,GPIO_PIN_7,GPIO_PIN_RESET);
 }
 
 
