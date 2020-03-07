@@ -1,0 +1,1 @@
+Test program of work with CAN BUS on HAL for STM32F103 Blue Pill
