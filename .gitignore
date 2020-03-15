@@ -49,3 +49,6 @@
 # project
 *.uvgui.*
 *.uvguix.*
+
+#Object folders
+*/Objects/
