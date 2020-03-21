@@ -91,7 +91,7 @@ void WriteDataArrayWithAAI(uint32_t address,uint8_t* data,uint8_t len){
 		enableFlash();
 		SendByte(AAI_COMMAND);
 		SendByte(data[len-2]);
-		SendByte(0x00);
+		SendByte(0xFF);
 		disableFlash();
 		WaitUntilBusy();
 	}
